@@ -12,6 +12,7 @@
         body {
             font-family: 'Montserrat', sans-serif;
             scroll-behavior: smooth;
+            padding-top: 120px;
         }
         
         .hero {
@@ -36,7 +37,6 @@
             box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
         }
         
-        /* Animation flottante ajoutée */
         .animate-float {
             animation: float 3s ease-in-out infinite;
         }
@@ -50,30 +50,10 @@
 </head>
 <body class="bg-gray-50">
     <!-- Navigation -->
-    <nav class="bg-white shadow-md sticky top-0 z-50">
-        <div class="container mx-auto px-6 py-3">
-            <div class="flex items-center justify-between">
-                <div class="flex items-center space-x-4">
-                    <img src="img/logo-jaime2arrlbv.svg" alt="J'aime le 2e Arrondissement" class="h-20 w-auto">
-                </div>
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="index.html" class="text-gray-800 hover:text-green-600">Accueil</a>
-                    <a href="index.html#candidat" class="text-gray-800 hover:text-green-600">Tête de liste</a>
-                    <a href="index.html#programme" class="text-gray-800 hover:text-green-600">Programme</a>
-                    <a href="#colistiers" class="text-gray-800 hover:text-green-600">Colistiers</a>
-                    <a href="index.html#contact" class="text-gray-800 hover:text-green-600">Contact</a>
-                </div>
-                <button class="md:hidden focus:outline-none">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </button>
-            </div>
-        </div>
-    </nav>
+    <div id="header-container"></div>
 
     <!-- Hero Section -->
-    <section class="hero py-32 text-white">
+    <section class="hero py-20 text-white">
         <div class="container mx-auto px-6 text-center">
             <h1 class="text-4xl md:text-6xl font-bold mb-6">Nos Colistiers</h1>
             <p class="text-xl md:text-2xl mb-8">Découvrez l'équipe complète qui compose notre liste pour le 2e Arrondissement</p>
@@ -213,60 +193,12 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="text-white py-12" style="background-color: #003893;">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row justify-between">
-                <div class="mb-8 md:mb-0">
-                    <img src="img/logo-jaime2arrlbv-blanc.svg" alt="J'aime le 2e Arrondissement" class="h-20 w-auto mb-4">
-                    <p class="text-gray-400 max-w-xs">Engagés pour un 2e Arrondissement plus prospère, plus sûr et plus dynamique.</p>
-                </div>
-                <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
-                    <div>
-                        <h4 class="text-lg font-semibold mb-4">Navigation</h4>
-                        <ul class="space-y-2">
-                            <li><a href="index.html" class="text-gray-400 hover:text-white">Accueil</a></li>
-                            <li><a href="index.html#candidat" class="text-gray-400 hover:text-white">Tête de liste</a></li>
-                            <li><a href="index.html#programme" class="text-gray-400 hover:text-white">Programme</a></li>
-                            <li><a href="colistiers.html" class="text-gray-400 hover:text-white">Colistiers</a></li>
-                            <li><a href="index.html#contact" class="text-gray-400 hover:text-white">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4 class="text-lg font-semibold mb-4">Élections</h4>
-                        <ul class="space-y-2">
-                            <li><a href="#" class="text-gray-400 hover:text-white">Calendrier électoral</a></li>
-                            <li><a href="#" class="text-gray-400 hover:text-white">Comment voter</a></li>
-                            <li><a href="#" class="text-gray-400 hover:text-white">Lieux de vote</a></li>
-                            <li><a href="#" class="text-gray-400 hover:text-white">Documents nécessaires</a></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4 class="text-lg font-semibold mb-4">Engagement</h4>
-                        <ul class="space-y-2">
-                            <li><a href="#" class="text-gray-400 hover:text-white">Devenir bénévole</a></li>
-                            <li><a href="#" class="text-gray-400 hover:text-white">Faire un don</a></li>
-                            <li><a href="#" class="text-gray-400 hover:text-white">Événements</a></li>
-                            <li><a href="#" class="text-gray-400 hover:text-white">Pétitions</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-                <p class="text-gray-400 mb-4 md:mb-0">© 2025 J'aime le 2<sup>e</sup> Arrondissement. Tous droits réservés.</p>
-                <div class="flex space-x-6">
-                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-youtube"></i></a>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <!-- Footer Container -->
+    <div id="footer-container"></div>
 
     <script>
         // Mobile menu toggle
-        document.querySelector('nav button').addEventListener('click', function() {
+        document.querySelector('nav button')?.addEventListener('click', function() {
             const mobileMenu = document.querySelector('.md\\:flex');
             mobileMenu.classList.toggle('hidden');
         });
@@ -301,6 +233,25 @@
     
         document.querySelectorAll('.program-card').forEach(card => {
             observer.observe(card);
+        });
+    </script>
+    
+    <!-- Include Header and Footer Components -->
+    <script src="components/header.js"></script>
+    <script src="components/footer.js"></script>
+    <script>
+        // Initialiser immédiatement
+        initializeHeader();
+        initializeFooter();
+        
+        // Réappliquer les styles après le chargement complet
+        document.addEventListener('DOMContentLoaded', function() {
+            const nav = document.getElementById('main-nav');
+            if (nav) {
+                nav.style.position = 'fixed';
+                nav.style.top = '0';
+                nav.style.zIndex = '50';
+            }
         });
     </script>
 </body>
