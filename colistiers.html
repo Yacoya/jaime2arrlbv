@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J'aime le 2e Arrondissement - Colistiers</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1554469384-e58fac16e23a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(45deg, #3a7d44, #003893);
+            color: white;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .program-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        /* Animation flottante ajoutée */
+        .animate-float {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-4">
+                    <img src="img/logo-jaime2arrlbv.svg" alt="J'aime le 2e Arrondissement" class="h-20 w-auto">
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-800 hover:text-green-600">Accueil</a>
+                    <a href="index.html#candidat" class="text-gray-800 hover:text-green-600">Tête de liste</a>
+                    <a href="index.html#programme" class="text-gray-800 hover:text-green-600">Programme</a>
+                    <a href="#colistiers" class="text-gray-800 hover:text-green-600">Colistiers</a>
+                    <a href="index.html#contact" class="text-gray-800 hover:text-green-600">Contact</a>
+                </div>
+                <button class="md:hidden focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero py-32 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Nos Colistiers</h1>
+            <p class="text-xl md:text-2xl mb-8">Découvrez l'équipe complète qui compose notre liste pour le 2e Arrondissement</p>
+        </div>
+    </section>
+
+    <!-- Colistiers Section -->
+    <section id="colistiers" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800">L'Équipe Complète</h2>
+                <div class="w-20 h-1 bg-green-600 mx-auto mt-4"></div>
+                <p class="text-gray-600 mt-6 max-w-2xl mx-auto">25 colistiers engagés et compétents au service des habitants du 2e Arrondissement.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md text-center program-card transition-all duration-300">
+                    <img src="img/colistiers/2- EFOUA OBAME Désiré.jpeg" alt="EFOUA OBAME DÉSIRÉ" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2" style="text-transform: uppercase;">EFOUA OBAME DÉSIRÉ</h3>
+                    <p class="text-gray-600">Société civile</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center program-card transition-all duration-300">
+                    <img src="img/colistiers/3- MENGA Fabrice  - Agent Commercial.jpeg" alt="MENGA FABRICE" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2" style="text-transform: uppercase;">MENGA FABRICE</h3>
+                    <p class="text-gray-600">Agent Commercial</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center program-card transition-all duration-300">
+                    <img src="img/colistiers/4- NKOUMOU Fina - entrepreneur.jpeg" alt="NKOUMOU FINA" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2" style="text-transform: uppercase;">NKOUMOU FINA</h3>
+                    <p class="text-gray-600">entrepreneur</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center program-card transition-all duration-300">
+                    <img src="img/colistiers/5- EDZO-E. NGUEMA ABRAHAM-Arold - Communicant.jpeg" alt="EDZO-E. NGUEMA ABRAHAM-AROLD" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2" style="text-transform: uppercase;">EDZO-E. NGUEMA ABRAHAM-AROLD</h3>
+                    <p class="text-gray-600">Communicant</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center program-card transition-all duration-300">
+                    <img src="img/colistiers/6- MINKO MI NZOGHE Romaric.jpeg" alt="MINKO MI NZOGHE ROMARIC" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2" style="text-transform: uppercase;">MINKO MI NZOGHE ROMARIC</h3>
+                    <p class="text-gray-600">Société civile</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center program-card transition-all duration-300">
+                    <img src="img/colistiers/7- NAKOUNDA Siméon - PASTEUR.jpeg" alt="NAKOUNDA SIMÉON" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2" style="text-transform: uppercase;">NAKOUNDA SIMÉON</h3>
+                    <p class="text-gray-600">PASTEUR</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center program-card transition-all duration-300">
+                    <img src="img/colistiers/8- NZOGHE BEKALE Armand - Agent en environnement.jpeg" alt="NZOGHE BEKALE ARMAND" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2" style="text-transform: uppercase;">NZOGHE BEKALE ARMAND</h3>
+                    <p class="text-gray-600">Agent en environnement</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center program-card transition-all duration-300">
+                    <img src="img/colistiers/9- ZOGHO OBAME Constand Jasmin - HSE.jpeg" alt="ZOGHO OBAME CONSTAND JASMIN" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2" style="text-transform: uppercase;">ZOGHO OBAME CONSTAND JASMIN</h3>
+                    <p class="text-gray-600">HSE</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center program-card transition-all duration-300">
+                    <img src="img/colistiers/10- NZIGOU Hans Patrick - Entrepreneur.jpeg" alt="NZIGOU HANS PATRICK" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2" style="text-transform: uppercase;">NZIGOU HANS PATRICK</h3>
+                    <p class="text-gray-600">Entrepreneur</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center program-card transition-all duration-300">
+                    <img src="img/colistiers/11- NTOUTOUME NZE Armand - PROFESSEUR.jpeg" alt="NTOUTOUME NZE ARMAND" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2" style="text-transform: uppercase;">NTOUTOUME NZE ARMAND</h3>
+                    <p class="text-gray-600">PROFESSEUR</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center program-card transition-all duration-300">
+                    <img src="img/colistiers/12- BOUTOTO BOUTOTO Sleidje Laddy - Comptable.jpeg" alt="BOUTOTO BOUTOTO SLEIDJE LADDY" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2" style="text-transform: uppercase;">BOUTOTO BOUTOTO SLEIDJE LADDY</h3>
+                    <p class="text-gray-600">Comptable</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center program-card transition-all duration-300">
+                    <img src="img/colistiers/13- MENGUE M ONDONG Périne - Assurance banque.jpeg" alt="MENGUE M ONDONG PÉRINE" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2" style="text-transform: uppercase;">MENGUE M ONDONG PÉRINE</h3>
+                    <p class="text-gray-600">Assurance banque</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center program-card transition-all duration-300">
+                    <img src="img/colistiers/14- NTSAME DUI Marie Marina - Entrepreneur.jpeg" alt="NTSAME DUI MARIE MARINA" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2" style="text-transform: uppercase;">NTSAME DUI MARIE MARINA</h3>
+                    <p class="text-gray-600">Entrepreneur</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center program-card transition-all duration-300">
+                    <img src="img/colistiers/15- NDONG NZUE Albert - Entrepreneur.jpeg" alt="NDONG NZUE ALBERT" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2" style="text-transform: uppercase;">NDONG NZUE ALBERT</h3>
+                    <p class="text-gray-600">Entrepreneur</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center program-card transition-all duration-300">
+                    <img src="img/colistiers/16- TCHIPA MOUISSI Anaïs.jpeg" alt="TCHIPA MOUISSI ANAÏS" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2" style="text-transform: uppercase;">TCHIPA MOUISSI ANAÏS</h3>
+                    <p class="text-gray-600">Société civile</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center program-card transition-all duration-300">
+                    <img src="img/colistiers/17- NZE NDONG Toussaint - Electricien.jpeg" alt="NZE NDONG TOUSSAINT" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2" style="text-transform: uppercase;">NZE NDONG TOUSSAINT</h3>
+                    <p class="text-gray-600">Electricien</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center program-card transition-all duration-300">
+                    <img src="img/colistiers/18- ATSAME ONDONG Grâce.jpeg" alt="ATSAME ONDONG GRÂCE" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2" style="text-transform: uppercase;">ATSAME ONDONG GRÂCE</h3>
+                    <p class="text-gray-600">Société civile</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center program-card transition-all duration-300">
+                    <img src="img/colistiers/19- EDZANG NDONG Romaric.jpeg" alt="EDZANG NDONG ROMARIC" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2" style="text-transform: uppercase;">EDZANG NDONG ROMARIC</h3>
+                    <p class="text-gray-600">Société civile</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center program-card transition-all duration-300">
+                    <img src="img/colistiers/20- BANG METOGHE Raissa.jpeg" alt="BANG METOGHE RAISSA" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2" style="text-transform: uppercase;">BANG METOGHE RAISSA</h3>
+                    <p class="text-gray-600">Société civile</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center program-card transition-all duration-300">
+                    <img src="img/colistiers/21- EBANE EYAMANE Gatien.jpeg" alt="EBANE EYAMANE GATIEN" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2" style="text-transform: uppercase;">EBANE EYAMANE GATIEN</h3>
+                    <p class="text-gray-600">Société civile</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center program-card transition-all duration-300">
+                    <img src="img/colistiers/22- IGALI MOUNGOYE Dell Derries - Etudiante.jpeg" alt="IGALI MOUNGOYE DELL DERRIES" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2" style="text-transform: uppercase;">IGALI MOUNGOYE DELL DERRIES</h3>
+                    <p class="text-gray-600">Etudiante</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center program-card transition-all duration-300">
+                    <img src="img/colistiers/23- ATOME MEYO Kevin.jpeg" alt="ATOME MEYO KEVIN" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2" style="text-transform: uppercase;">ATOME MEYO KEVIN</h3>
+                    <p class="text-gray-600">Société civile</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center program-card transition-all duration-300">
+                    <img src="img/colistiers/24- ONTSOUKA Dany Erwing.jpeg" alt="ONTSOUKA DANY ERWING" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2" style="text-transform: uppercase;">ONTSOUKA DANY ERWING</h3>
+                    <p class="text-gray-600">Société civile</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center program-card transition-all duration-300">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=764&q=80" alt="Victor Bernard" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2" style="text-transform: uppercase;">Victor Bernard</h3>
+                    <p class="text-gray-600">Diplomate, expert en relations internationales.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-white py-12" style="background-color: #003893;">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-8 md:mb-0">
+                    <img src="img/logo-jaime2arrlbv-blanc.svg" alt="J'aime le 2e Arrondissement" class="h-20 w-auto mb-4">
+                    <p class="text-gray-400 max-w-xs">Engagés pour un 2e Arrondissement plus prospère, plus sûr et plus dynamique.</p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Navigation</h4>
+                        <ul class="space-y-2">
+                            <li><a href="index.html" class="text-gray-400 hover:text-white">Accueil</a></li>
+                            <li><a href="index.html#candidat" class="text-gray-400 hover:text-white">Tête de liste</a></li>
+                            <li><a href="index.html#programme" class="text-gray-400 hover:text-white">Programme</a></li>
+                            <li><a href="colistiers.html" class="text-gray-400 hover:text-white">Colistiers</a></li>
+                            <li><a href="index.html#contact" class="text-gray-400 hover:text-white">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Élections</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:text-white">Calendrier électoral</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white">Comment voter</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white">Lieux de vote</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white">Documents nécessaires</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Engagement</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:text-white">Devenir bénévole</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white">Faire un don</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white">Événements</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white">Pétitions</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">© 2025 J'aime le 2<sup>e</sup> Arrondissement. Tous droits réservés.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('nav button').addEventListener('click', function() {
+            const mobileMenu = document.querySelector('.md\\:flex');
+            mobileMenu.classList.toggle('hidden');
+        });
+    
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                
+                // Close mobile menu if open
+                const mobileMenu = document.querySelector('.md\\:flex');
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+    
+        // Add animation to colistier cards when they come into view
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-float');
+                } else {
+                    entry.target.classList.remove('animate-float');
+                }
+            });
+        }, { threshold: 0.1 });
+    
+        document.querySelectorAll('.program-card').forEach(card => {
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>
