@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment Voter - J'aime le 2e Arrondissement</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            scroll-behavior: smooth;
+            padding-top: 120px;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #003893 0%, #2563eb 50%, #003893 100%);
+        }
+
+        .step-card {
+            transition: all 0.3s ease;
+        }
+
+        .step-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-primary {
+            background: linear-gradient(45deg, #3a7d44, #003893);
+            color: white;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .subtitle-blue {
+            color: #003893 !important;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <div id="header-container"></div>
+
+    <!-- Hero Section -->
+    <section class="hero py-32 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Comment Voter</h1>
+            <p class="text-xl md:text-2xl mb-8">Guide complet pour participer aux élections locales de 2025</p>
+        </div>
+    </section>
+
+    <!-- Voting Guide Content -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Comment voter ? Guide pratique pour les électeurs gabonais</h2>
+
+                    <h3 class="text-2xl font-bold subtitle-blue mb-4">Introduction</h3>
+                    <p class="text-gray-600 mb-6">Voter est un droit fondamental et un devoir civique qui permet à chaque citoyen gabonais d'exprimer sa voix pour choisir ses représentants ou se prononcer sur des questions importantes par référendum. Ce guide détaille les étapes du vote pour garantir un exercice libre, serein et conforme à la loi électorale gabonaise.</p>
+
+                    <h3 class="text-2xl font-bold subtitle-blue mb-4">Conditions d'accès au vote</h3>
+                    <p class="text-gray-600 mb-6">Il faut être inscrit sur la liste électorale biométrique permanente et être titulaire d'une carte d'électeur valide (ou présenter une pièce d'identité officielle en cas d'absence de la carte).</p>
+
+                    <h3 class="text-2xl font-bold subtitle-blue mb-4">Le vote se déroule en un jour unique, le samedi sauf cas exceptionnel.</h3>
+
+                    <h3 class="text-2xl font-bold subtitle-blue mb-4">Lieu et heure du vote</h3>
+                    <p class="text-gray-600 mb-6">Le vote s'effectue dans un bureau de vote déterminé par l'administration. Ce bureau est généralement situé dans des établissements publics accessibles aux personnes à mobilité réduite.</p>
+
+                    <h3 class="text-2xl font-bold subtitle-blue mb-4">Le scrutin ouvre à 7 heures et ferme à 18 heures, avec possibilité de prolongation dans certains cas précis sans jamais dépasser 20 heures.</h3>
+
+                    <h3 class="text-2xl font-bold subtitle-blue mb-4">Déroulement du vote</h3>
+
+                    <h4 class="text-xl font-semibold subtitle-blue mb-3">Arrivée au bureau de vote</h4>
+                    <p class="text-gray-600 mb-4">Présentez-vous au bureau muni de votre carte d'électeur ou, à défaut, d'une pièce d'identité officielle (carte nationale d'identité ou passeport).</p>
+
+                    <h4 class="text-xl font-semibold subtitle-blue mb-3">Signature et encre indélébile</h4>
+                    <p class="text-gray-600 mb-4">Vous devez signer la liste d'émargement en face de votre nom et un agent marquera votre doigt à l'encre indélébile pour empêcher un double vote.</p>
+
+                    <h4 class="text-xl font-semibold subtitle-blue mb-3">Isolement pour voter</h4>
+                    <p class="text-gray-600 mb-4">Utilisez impérativement un isoloir pour assurer le secret de votre vote. L'isoloir est placé de manière à ne pas cacher les opérations de vote au public.</p>
+
+                    <h4 class="text-xl font-semibold subtitle-blue mb-3">Choix du bulletin</h4>
+                    <p class="text-gray-600 mb-4">Vous recevrez une enveloppe accolée comportant deux compartiments distincts :</p>
+                    <ul class="ml-6 mb-4 space-y-2">
+                        <li>• un compartiment blanc pour le bulletin que vous choisissez</li>
+                        <li>• un compartiment noir pour les autres bulletins.</li>
+                    </ul>
+
+                    <h4 class="text-xl font-semibold subtitle-blue mb-3">Vote et dépôt dans l'urne</h4>
+                    <p class="text-gray-600 mb-4">Glissez votre enveloppe dans l'urne transparente devant les membres du bureau de vote. Le président appelle votre nom et confirme que vous avez voté.</p>
+                    <p class="text-gray-600 mb-6">Si vous avez un handicap, vous pouvez vous faire assister par la personne de votre choix pour déposer le bulletin.</p>
+
+                    <h3 class="text-2xl font-bold subtitle-blue mb-4">Vote par procuration</h3>
+                    <p class="text-gray-600 mb-4">Sous certaines conditions (absence justifiée, maladie, handicap, obligations professionnelles ou familiales, détention non privative de droits électoraux), vous pouvez voter par procuration.</p>
+                    <p class="text-gray-600 mb-4">Le mandataire doit être inscrit sur la liste électorale de la même commune ou département et ne détenir qu'une procuration.</p>
+                    <p class="text-gray-600 mb-6">La procuration est formalisée par un formulaire officiel à retirer auprès du Ministère de l'Intérieur ou des commissions électorales.</p>
+
+                    <h3 class="text-2xl font-bold subtitle-blue mb-4">Après le vote</h3>
+                    <p class="text-gray-600 mb-4">Le dépouillement des bulletins est public et effectué immédiatement après la clôture par les membres du bureau en présence des représentants des candidats.</p>
+                    <p class="text-gray-600 mb-6">Un procès-verbal des opérations est rédigé, signé, affiché et remis aux représentants des candidats.</p>
+
+                    <h3 class="text-2xl font-bold subtitle-blue mb-4">Règles importantes à respecter</h3>
+                    <ul class="space-y-3 text-gray-600 mb-6">
+                        <li>• Le vote est secret et libre : nul ne peut être influencé ou contraint dans son choix.</li>
+                        <li>• L'introduction d'armes dans les bureaux de vote est interdite.</li>
+                        <li>• Toute forme de pression, intimidation ou fraude est passible de sanctions pénales.</li>
+                        <li>• La distribution de documents de campagne le jour du scrutin est interdite.</li>
+                        <li>• Il est interdit d'exercer une influence sur les électeurs présents dans le bureau de vote.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-20 text-white" style="background: linear-gradient(45deg, #3a7d44, #003893);">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-6">Prêt à Voter ?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Votre participation est essentielle pour l'avenir de notre arrondissement. Rendez-vous aux urnes le jour du scrutin !</p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="calendrier-electoral.html" class="btn-primary py-3 px-8 rounded-full font-semibold inline-block">Consulter le Calendrier</a>
+                <a href="index.html#contact" class="border-2 border-white py-3 px-8 rounded-full font-semibold inline-block">Nous Contacter</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer-container"></div>
+
+    <!-- Composants JavaScript -->
+    <script src="components/header.js"></script>
+    <script src="components/footer.js"></script>
+    <script>
+        // Initialiser immédiatement
+        initializeHeader();
+        initializeFooter();
+
+        // Réappliquer les styles après le chargement complet
+        document.addEventListener('DOMContentLoaded', function() {
+            const nav = document.getElementById('main-nav');
+            if (nav) {
+                nav.style.position = 'fixed';
+                nav.style.top = '0';
+                nav.style.zIndex = '50';
+            }
+        });
+    </script>
+</body>
+</html>

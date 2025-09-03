@@ -1,0 +1,59 @@
+/* Custom Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Alternate+Gothic+ATF:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Config+Condensed:wght@400;500&display=swap');
+
+/* Titles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Alternate Gothic ATF", Sans-serif;
+  font-size: 30px;
+  line-height: 0.9em;
+  letter-spacing: -0.7px;
+}
+
+/* Adjust sizes for different headings */
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+/* Texts */
+body, p {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  text-transform: none;
+  line-height: 32px;
+}
+
+/* Navigation */
+nav a {
+  font-family: "Config Condensed", Sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: none;
+  font-style: normal;
+  text-decoration: none;
+  line-height: 1em;
+  letter-spacing: -0.2px;
+  word-spacing: 0em;
+}

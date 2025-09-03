@@ -3,11 +3,13 @@ function createHeader() {
     const isIndexPage = window.location.pathname.includes('index.html') || window.location.pathname === '/' || window.location.pathname.endsWith('/');
     
     return `
-        <nav class="bg-white shadow-md fixed top-0 z-50" id="main-nav">
+        <nav class="bg-white fixed top-0 z-50" id="main-nav">
             <div class="container mx-auto px-6 py-3">
                 <div class="flex items-center justify-between">
                     <div class="flex items-center space-x-4">
-                        <img src="img/logo-jaime2arrlbv.svg" alt="J'aime le 2e Arrondissement" class="h-20 w-auto">
+                        <a href="${isIndexPage ? '#accueil' : 'index.html'}">
+                            <img src="img/logo-jaime2arrlbv.svg" alt="J'aime le 2e Arrondissement" class="h-20 w-auto">
+                        </a>
                     </div>
                     <div class="hidden md:flex items-center space-x-8" id="desktop-menu">
                         <a href="${isIndexPage ? '#accueil' : 'index.html#accueil'}" class="text-gray-800 hover:text-green-600">Accueil</a>
@@ -40,17 +42,31 @@ function createHeader() {
 function initializeHeader() {
     // Injecter le header
     document.getElementById('header-container').innerHTML = createHeader();
-    
-    // Forcer le positionnement sticky avec JavaScript
+
+    // Forcer le positionnement fixed avec JavaScript
     const nav = document.getElementById('main-nav');
     if (nav) {
         nav.style.position = 'fixed';
         nav.style.top = '0';
         nav.style.zIndex = '50';
         nav.style.width = '100%';
-        
+
         // Forcer le recalcul du layout
         nav.offsetHeight;
+    }
+
+    // Gérer l'ombre en fonction du scroll
+    const heroSection = document.querySelector('.hero');
+    if (heroSection) {
+        const heroHeight = heroSection.offsetHeight;
+
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > heroHeight - 100) { // Un peu avant la fin du hero
+                nav.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1)';
+            } else {
+                nav.style.boxShadow = 'none';
+            }
+        });
     }
     
     // Initialiser le menu mobile

@@ -21,10 +21,9 @@ function createFooter() {
                         <div>
                             <h4 class="text-lg font-semibold mb-4">Élections</h4>
                             <ul class="space-y-2">
-                                <li><a href="#" class="text-gray-400 hover:text-white">Calendrier électoral</a></li>
-                                <li><a href="#" class="text-gray-400 hover:text-white">Comment voter</a></li>
+                                <li><a href="calendrier-electoral.html" class="text-gray-400 hover:text-white">Calendrier électoral</a></li>
+                                <li><a href="comment-voter.html" class="text-gray-400 hover:text-white">Comment voter</a></li>
                                 <li><a href="#" class="text-gray-400 hover:text-white">Lieux de vote</a></li>
-                                <li><a href="#" class="text-gray-400 hover:text-white">Documents nécessaires</a></li>
                             </ul>
                         </div>
                         <div>

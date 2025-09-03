@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendrier Électoral - J'aime le 2e Arrondissement</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            scroll-behavior: smooth;
+            padding-top: 120px;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #003893 0%, #2563eb 50%, #003893 100%);
+        }
+
+        .calendar-item {
+            transition: all 0.3s ease;
+        }
+
+        .calendar-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .date-bold {
+            font-weight: bold;
+            color: #3a7d44;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <div id="header-container"></div>
+
+    <!-- Hero Section -->
+    <section class="hero py-32 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Calendrier Électoral 2025</h1>
+            <p class="text-xl md:text-2xl mb-8">Toutes les dates importantes pour les élections locales</p>
+        </div>
+    </section>
+
+    <!-- Calendar Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800">Échéances Électorales</h2>
+                <div class="w-20 h-1 bg-green-600 mx-auto mt-4"></div>
+                <p class="text-gray-600 mt-6 max-w-2xl mx-auto">Restez informé des dates clés du processus électoral pour les élections locales de 2025 au Gabon.</p>
+            </div>
+
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Calendrier Électoral Officiel</h3>
+                    <p class="text-gray-600 mb-6">Dans le cadre de l'organisation des élections législatives et locales, le calendrier électoral se déploie selon les étapes suivantes, conformément aux dispositions réglementaires en vigueur :</p>
+
+                    <div class="space-y-4">
+                        <div class="border-l-4 border-green-500 pl-4">
+                            <p class="text-gray-700"><strong class="date-bold">Du 27 juillet au 07 août 2025 :</strong> Dépôt des déclarations de candidatures, de 08h à 18h, auprès de la Commission Nationale d'Organisation et de Coordination des Élections et du Référendum (CNOCER) et des commissions électorales locales.</p>
+                        </div>
+
+                        <div class="border-l-4 border-green-500 pl-4">
+                            <p class="text-gray-700"><strong class="date-bold">Du 8 au 10 août 2025 :</strong> Traitement des dossiers par les commissions électorales locales.</p>
+                        </div>
+
+                        <div class="border-l-4 border-green-500 pl-4">
+                            <p class="text-gray-700"><strong class="date-bold">Du 11 au 13 août 2025 :</strong> Transmission des dossiers de candidature à la CNOCER, à l'Autorité de Contrôle des Élections et des Référendums (ACER), ainsi qu'aux juridictions compétentes (Cour constitutionnelle et tribunaux administratifs).</p>
+                        </div>
+
+                        <div class="border-l-4 border-green-500 pl-4">
+                            <p class="text-gray-700"><strong class="date-bold">Du 14 au 16 août 2025 :</strong> Examen des dossiers de candidature par la CNOCER.</p>
+                        </div>
+
+                        <div class="border-l-4 border-green-500 pl-4">
+                            <p class="text-gray-700"><strong class="date-bold">Du 17 au 19 août 2025 :</strong> Période de dépôt des recours devant la Cour constitutionnelle et les tribunaux administratifs.</p>
+                        </div>
+
+                        <div class="border-l-4 border-green-500 pl-4">
+                            <p class="text-gray-700"><strong class="date-bold">Le 27 août 2025 :</strong> Clôture de l'examen des recours par la Cour constitutionnelle et les juridictions administratives.</p>
+                        </div>
+
+                        <div class="border-l-4 border-green-500 pl-4">
+                            <p class="text-gray-700"><strong class="date-bold">Du 17 au 26 septembre 2025 :</strong> Campagne électorale pour :</p>
+                            <ul class="ml-6 mt-2 space-y-1">
+                                <li>• le premier tour de l'élection des députés à l'Assemblée nationale ;</li>
+                                <li>• l'élection, à tour unique, des membres des conseils départementaux et des conseils municipaux.</li>
+                            </ul>
+                        </div>
+
+                        <div class="border-l-4 border-green-500 pl-4">
+                            <p class="text-gray-700"><strong class="date-bold">Le 27 septembre 2025 :</strong> Convocation du collège électoral pour :</p>
+                            <ul class="ml-6 mt-2 space-y-1">
+                                <li>• le premier tour de l'élection des députés ;</li>
+                                <li>• l'élection, à tour unique, des membres des conseils départementaux et municipaux.</li>
+                            </ul>
+                        </div>
+
+                        <div class="border-l-4 border-green-500 pl-4">
+                            <p class="text-gray-700"><strong class="date-bold">Du 1er au 10 octobre 2025 :</strong> Campagne électorale pour le second tour de l'élection des députés.</p>
+                        </div>
+
+                        <div class="border-l-4 border-green-500 pl-4">
+                            <p class="text-gray-700"><strong class="date-bold">Le 11 octobre 2025 :</strong> Convocation du collège électoral pour le second tour de l'élection des députés.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer-container"></div>
+
+    <!-- Composants JavaScript -->
+    <script src="components/header.js"></script>
+    <script src="components/footer.js"></script>
+    <script>
+        // Initialiser immédiatement
+        initializeHeader();
+        initializeFooter();
+    </script>
+</body>
+</html>
