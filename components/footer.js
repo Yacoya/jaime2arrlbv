@@ -1,6 +1,6 @@
 function createFooter() {
     return `
-        <footer class="text-white py-12" style="background-color: #003893;">
+        <footer class="text-white py-12" style="background-color: #003366;">
             <div class="container mx-auto px-6">
                 <div class="flex flex-col md:flex-row justify-between">
                     <div class="mb-8 md:mb-0">
@@ -39,8 +39,6 @@ function createFooter() {
                     <p class="text-gray-400 mb-4 md:mb-0">© 2025 J'aime le 2<sup>e</sup> Arrondissement. Tous droits réservés.</p>
                     <div class="flex space-x-6">
                         <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
                         <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>

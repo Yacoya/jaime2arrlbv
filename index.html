@@ -3,23 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>J'aime le 2e Arrondissement - Élections Locales 2025</title>
+    <title>J'aime le 2e Arrondissement de la commune de Libreville - Élections Locales 2025</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="img/logo-jaime2arrlbv.svg">
+    <link rel="apple-touch-icon" href="img/logo-jaime2arrlbv.svg">
+    <meta name="description" content="Découvrez la liste 'J'aime le 2e Arrondissement' pour les élections locales 2025 à Libreville. Programme engagé pour le développement durable et la prospérité de notre arrondissement.">
+    <meta name="keywords" content="élections locales 2025, Libreville, 2e arrondissement, Boris MBA OKEY, programme électoral, développement urbain, Gabon">
+    <meta name="author" content="J'aime le 2e Arrondissement">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://jaime2arrondissement.ga/">
+    <!-- Open Graph -->
+    <meta property="og:title" content="J'aime le 2e Arrondissement - Élections Locales 2025">
+    <meta property="og:description" content="Découvrez la liste 'J'aime le 2e Arrondissement' pour les élections locales 2025 à Libreville. Programme engagé pour le développement durable et la prospérité de notre arrondissement.">
+    <meta property="og:image" content="https://jaime2arrondissement.ga/img/logo-jaime2arrlbv.svg">
+    <meta property="og:url" content="https://jaime2arrondissement.ga/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="J'aime le 2e Arrondissement">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="J'aime le 2e Arrondissement - Élections Locales 2025">
+    <meta name="twitter:description" content="Découvrez la liste 'J'aime le 2e Arrondissement' pour les élections locales 2025 à Libreville. Programme engagé pour le développement durable et la prospérité de notre arrondissement.">
+    <meta name="twitter:image" content="https://jaime2arrondissement.ga/img/logo-jaime2arrlbv.svg">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "PoliticalParty",
+      "name": "J'aime le 2e Arrondissement de la commune de Libreville",
+      "description": "La liste J'aime le 2e Arrondissement porte une vision novatrice et pragmatique pour notre arrondissement. Nous croyons en un développement équilibré qui profite à tous les habitants.",
+      "url": "https://jaime2arrondissement.ga",
+      "logo": "https://jaime2arrondissement.ga/img/logo-jaime2arrlbv.svg",
+      "foundingDate": "2025",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Libreville",
+        "addressRegion": "Gabon",
+        "addressCountry": "GA"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+241-074403813",
+        "email": "contact@jaime2earrondissement.ga",
+        "contactType": "customer service"
+      },
+      "sameAs": [
+        "https://www.facebook.com/jaime2arrondissement",
+        "https://www.youtube.com/jaime2arrondissement"
+      ]
+    }
+    </script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
         
         body {
-            font-family: 'Montserrat', sans-serif;
+            font-family: 'Arial', sans-serif;
             scroll-behavior: smooth;
             padding-top: 120px;
         }
         
         .hero {
-            background: linear-gradient(135deg, #003893 0%, #2563eb 50%, #003893 100%);
-            background-size: cover;
-            background-position: center;
+            background: linear-gradient(135deg, rgba(0, 51, 102, 0.9) 0%, rgba(0, 85, 153, 0.9) 50%, rgba(0, 51, 102, 0.9) 100%);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
         }
         
         .program-card {
@@ -40,13 +86,36 @@
             50% { transform: translateY(-15px); }
             100% { transform: translateY(0px); }
         }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes glow {
+            0% { box-shadow: 0 0 5px rgba(255,255,255,0.2); }
+            50% { box-shadow: 0 0 20px rgba(255,255,255,0.4), 0 0 30px rgba(255,255,255,0.2); }
+            100% { box-shadow: 0 0 5px rgba(255,255,255,0.2); }
+        }
         
         .btn-primary {
-            background: linear-gradient(45deg, #3a7d44, #003893);
+            background: linear-gradient(45deg, #003366, #005599);
             color: white;
             transition: all 0.3s ease;
         }
-        
+
         .btn-primary:hover {
             transform: translateY(-3px);
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
@@ -70,176 +139,175 @@
     </section>
 
     <!-- About Section -->
-    <section class="py-20 bg-white">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row items-center">
-                <div class="md:w-1/2 mb-10 md:mb-0">
+    <section class="bg-white">
+        <div class="w-full">
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-3/5 py-20 px-6">
                     <h2 class="text-3xl font-bold text-gray-800 mb-6">Pourquoi nous choisir ?</h2>
                     <p class="text-gray-600 mb-6">La liste "J'aime le 2e Arrondissement" porte une vision novatrice et pragmatique pour notre arrondissement. Nous croyons en un développement équilibré qui profite à tous les habitants.</p>
                     <p class="text-gray-600 mb-6">Notre engagement est basé sur des valeurs de transparence, d'écoute et d'action concrète. Nous voulons redonner au 2e Arrondissement sa place comme moteur économique et culturel de Libreville.</p>
                 </div>
-                <div class="md:w-1/2 flex justify-center">
-                    <img src="img/a-la-une.png" alt="2e Arrondissement de Libreville" class="rounded-lg shadow-xl w-full max-w-lg">
+                <div class="md:w-2/5 relative">
+                    <img src="img/liste-jaime2arrlbv.jpg" alt="Liste J'aime le 2e Arrondissement" class="w-full h-full object-cover shadow-xl" style="margin: 0;">
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Mobile Spacer -->
+    <div class="block md:hidden h-8 bg-gray-100"></div>
+
     <!-- Candidate Section -->
-    <section id="candidat" class="py-20 bg-gray-100">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-gray-800">Tête de liste</h2>
-                <div class="w-20 h-1 bg-green-600 mx-auto mt-4"></div>
-            </div>
-            <div class="flex flex-col md:flex-row items-center">
-                <div class="md:w-1/3 mb-10 md:mb-0 flex justify-center">
-                    <div class="relative">
-                        <img src="img/MBA-OKEY-Boris-Yvan-tete-de-liste.jpg" alt="Boris MBA Okey" class="rounded-full w-64 h-64 object-cover shadow-xl border-4 border-white">
-                    </div>
+    <section id="candidat" class="bg-gray-100">
+        <div class="w-full">
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-2/5 relative">
+                    <img src="img/MBA OKEY Boris-greenBG.jpeg" alt="BORIS MBA OKEY" class="w-full h-full object-cover shadow-xl" style="margin: 0;">
                 </div>
-                <div class="md:w-2/3 md:pl-16">
-                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Boris MBA Okey</h3>
+                <div class="md:w-3/5 py-20 px-6">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">Tête de liste</h2>
+                    <div class="w-20 h-1 bg-green-600 mb-6"></div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">BORIS MBA OKEY</h3>
                     <h4 class="text-xl text-green-600 mb-6">Tête de Liste "J'aime le 2<sup>e</sup> Arrondissement de Libreville"</h4>
-                    <p class="text-gray-600 mb-4">Natif du 2e Arrondissement, Boris MBA Okey est un homme politique engagé depuis plusieurs années dans le développement local.</p>
+                    <p class="text-gray-600 mb-4">Natif du 2e Arrondissement, BORIS MBA OKEY est un homme politique engagé depuis plusieurs années dans le développement local.</p>
                     <p class="text-gray-600 mb-4">Diplômé en psychologie et communication, il a dirigé plusieurs projets communautaires et connaît parfaitement les défis et opportunités du 2ème arrondissement.</p>
                     <p class="text-gray-600 mb-6">"Mon engagement est simple : mettre mon expérience et mon énergie au service des habitants pour faire du 2e Arrondissement un modèle de développement urbain harmonieux."</p>
-                    <div class="flex space-x-4">
-                        <a href="#" class="text-blue-500 hover:text-blue-700"><i class="fab fa-twitter text-xl"></i></a>
-                        <a href="#" class="text-blue-700 hover:text-blue-900"><i class="fab fa-facebook text-xl"></i></a>
-                        <a href="#" class="text-pink-600 hover:text-pink-800"><i class="fab fa-instagram text-xl"></i></a>
-                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Program Section -->
-    <section id="programme" class="py-20 bg-gray-100">
-        <div class="container mx-auto px-6">
+    <section id="programme" class="py-20 relative overflow-hidden" style="background: linear-gradient(-45deg, #003366, #005599, #0077cc, #003366); background-size: 400% 400%; animation: gradientShift 15s ease infinite;">
+        <!-- Decorative Elements -->
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute bottom-20 left-1/4 w-16 h-16 border-2 border-white rounded-full animate-ping" style="animation-delay: 2s;"></div>
+        </div>
+
+        <div class="container mx-auto px-6 relative z-10">
             <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-gray-800">Notre Programme</h2>
-                <div class="w-20 h-1 bg-green-600 mx-auto mt-4"></div>
-                <p class="text-gray-600 mt-6 max-w-2xl mx-auto">Un programme concret et réalisable pour améliorer le quotidien des habitants du 2<sup>e</sup> Arrondissement.</p>
+                <h2 class="text-3xl font-bold text-white drop-shadow-lg">Notre Programme</h2>
+                <div class="w-20 h-1 bg-white mx-auto mt-4 rounded-full"></div>
+                <p class="text-white mt-6 max-w-2xl mx-auto drop-shadow-md">Un programme concret et réalisable pour améliorer le quotidien des habitants du 2<sup>e</sup> Arrondissement.</p>
             </div>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="program-card bg-gray-50 p-8 rounded-lg shadow-md transition-all duration-300 border-l-4 border-green-500">
-                    <div class="text-green-600 mb-4">
-                        <i class="fas fa-home text-4xl"></i>
+                <div class="program-card bg-white/10 backdrop-blur-lg p-8 rounded-2xl shadow-2xl transition-all duration-500 border border-white/20 hover:bg-white/20 hover:scale-105 hover:shadow-3xl animate-fadeInUp" style="animation-delay: 0.1s;">
+                    <div class="text-white mb-6 transform transition-transform duration-300 hover:scale-110">
+                        <i class="fas fa-home text-5xl drop-shadow-lg"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-4">Cadre de vie</h3>
-                    <ul class="text-gray-600 space-y-2">
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
-                            <span>Amélioration de la collecte des déchets</span>
+                    <h3 class="text-2xl font-bold text-white mb-6 drop-shadow-md">Cadre de vie</h3>
+                    <ul class="text-white/90 space-y-3">
+                        <li class="flex items-start transform transition-all duration-300 hover:translate-x-2">
+                            <i class="fas fa-check text-green-300 mt-1 mr-3 text-lg"></i>
+                            <span class="drop-shadow-sm">Amélioration de la collecte des déchets</span>
                         </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
-                            <span>Création d'espaces verts et aires de jeux</span>
+                        <li class="flex items-start transform transition-all duration-300 hover:translate-x-2">
+                            <i class="fas fa-check text-green-300 mt-1 mr-3 text-lg"></i>
+                            <span class="drop-shadow-sm">Création d'espaces verts et aires de jeux</span>
                         </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
-                            <span>Rénovation des voiries et éclairage public</span>
+                        <li class="flex items-start transform transition-all duration-300 hover:translate-x-2">
+                            <i class="fas fa-check text-green-300 mt-1 mr-3 text-lg"></i>
+                            <span class="drop-shadow-sm">Rénovation des voiries et éclairage public</span>
                         </li>
                     </ul>
                 </div>
-                <div class="program-card bg-gray-50 p-8 rounded-lg shadow-md transition-all duration-300 border-l-4 border-blue-500">
-                    <div class="text-green-600 mb-4">
-                        <i class="fas fa-briefcase text-4xl"></i>
+                <div class="program-card bg-white/10 backdrop-blur-lg p-8 rounded-2xl shadow-2xl transition-all duration-500 border border-white/20 hover:bg-white/20 hover:scale-105 hover:shadow-3xl animate-fadeInUp" style="animation-delay: 0.2s;">
+                    <div class="text-white mb-6 transform transition-transform duration-300 hover:scale-110">
+                        <i class="fas fa-briefcase text-5xl drop-shadow-lg"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-4">Économie locale</h3>
-                    <ul class="text-gray-600 space-y-2">
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
-                            <span>Soutien aux petits commerces et artisans</span>
+                    <h3 class="text-2xl font-bold text-white mb-6 drop-shadow-md">Économie locale</h3>
+                    <ul class="text-white/90 space-y-3">
+                        <li class="flex items-start transform transition-all duration-300 hover:translate-x-2">
+                            <i class="fas fa-check text-green-300 mt-1 mr-3 text-lg"></i>
+                            <span class="drop-shadow-sm">Soutien aux petits commerces et artisans</span>
                         </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
-                            <span>Création d'un marché moderne et sécurisé</span>
+                        <li class="flex items-start transform transition-all duration-300 hover:translate-x-2">
+                            <i class="fas fa-check text-green-300 mt-1 mr-3 text-lg"></i>
+                            <span class="drop-shadow-sm">Création d'un marché moderne et sécurisé</span>
                         </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
-                            <span>Formation professionnelle pour les jeunes</span>
+                        <li class="flex items-start transform transition-all duration-300 hover:translate-x-2">
+                            <i class="fas fa-check text-green-300 mt-1 mr-3 text-lg"></i>
+                            <span class="drop-shadow-sm">Formation professionnelle pour les jeunes</span>
                         </li>
                     </ul>
                 </div>
-                <div class="program-card bg-gray-50 p-8 rounded-lg shadow-md transition-all duration-300 border-l-4 border-green-600">
-                    <div class="text-green-600 mb-4">
-                        <i class="fas fa-shield-alt text-4xl"></i>
+                <div class="program-card bg-white/10 backdrop-blur-lg p-8 rounded-2xl shadow-2xl transition-all duration-500 border border-white/20 hover:bg-white/20 hover:scale-105 hover:shadow-3xl animate-fadeInUp" style="animation-delay: 0.3s;">
+                    <div class="text-white mb-6 transform transition-transform duration-300 hover:scale-110">
+                        <i class="fas fa-shield-alt text-5xl drop-shadow-lg"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-4">Sécurité</h3>
-                    <ul class="text-gray-600 space-y-2">
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
-                            <span>Renforcement de la police de proximité</span>
+                    <h3 class="text-2xl font-bold text-white mb-6 drop-shadow-md">Sécurité</h3>
+                    <ul class="text-white/90 space-y-3">
+                        <li class="flex items-start transform transition-all duration-300 hover:translate-x-2">
+                            <i class="fas fa-check text-green-300 mt-1 mr-3 text-lg"></i>
+                            <span class="drop-shadow-sm">Renforcement de la police de proximité</span>
                         </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
-                            <span>Installation de caméras de surveillance</span>
+                        <li class="flex items-start transform transition-all duration-300 hover:translate-x-2">
+                            <i class="fas fa-check text-green-300 mt-1 mr-3 text-lg"></i>
+                            <span class="drop-shadow-sm">Installation de caméras de surveillance</span>
                         </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
-                            <span>Création de comités de quartier vigilants</span>
+                        <li class="flex items-start transform transition-all duration-300 hover:translate-x-2">
+                            <i class="fas fa-check text-green-300 mt-1 mr-3 text-lg"></i>
+                            <span class="drop-shadow-sm">Création de comités de quartier vigilants</span>
                         </li>
                     </ul>
                 </div>
-                <div class="program-card bg-gray-50 p-8 rounded-lg shadow-md transition-all duration-300 border-l-4 border-blue-600">
-                    <div class="text-green-600 mb-4">
-                        <i class="fas fa-graduation-cap text-4xl"></i>
+                <div class="program-card bg-white/10 backdrop-blur-lg p-8 rounded-2xl shadow-2xl transition-all duration-500 border border-white/20 hover:bg-white/20 hover:scale-105 hover:shadow-3xl animate-fadeInUp" style="animation-delay: 0.4s;">
+                    <div class="text-white mb-6 transform transition-transform duration-300 hover:scale-110">
+                        <i class="fas fa-graduation-cap text-5xl drop-shadow-lg"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-4">Éducation</h3>
-                    <ul class="text-gray-600 space-y-2">
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
-                            <span>Rénovation des écoles du quartier</span>
+                    <h3 class="text-2xl font-bold text-white mb-6 drop-shadow-md">Éducation</h3>
+                    <ul class="text-white/90 space-y-3">
+                        <li class="flex items-start transform transition-all duration-300 hover:translate-x-2">
+                            <i class="fas fa-check text-green-300 mt-1 mr-3 text-lg"></i>
+                            <span class="drop-shadow-sm">Rénovation des écoles du quartier</span>
                         </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
-                            <span>Soutien scolaire gratuit</span>
+                        <li class="flex items-start transform transition-all duration-300 hover:translate-x-2">
+                            <i class="fas fa-check text-green-300 mt-1 mr-3 text-lg"></i>
+                            <span class="drop-shadow-sm">Soutien scolaire gratuit</span>
                         </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
-                            <span>Bibliothèque de quartier moderne</span>
+                        <li class="flex items-start transform transition-all duration-300 hover:translate-x-2">
+                            <i class="fas fa-check text-green-300 mt-1 mr-3 text-lg"></i>
+                            <span class="drop-shadow-sm">Bibliothèque de quartier moderne</span>
                         </li>
                     </ul>
                 </div>
-                <div class="program-card bg-gray-50 p-8 rounded-lg shadow-md transition-all duration-300 border-l-4 border-green-400">
-                    <div class="text-green-600 mb-4">
-                        <i class="fas fa-heartbeat text-4xl"></i>
+                <div class="program-card bg-white/10 backdrop-blur-lg p-8 rounded-2xl shadow-2xl transition-all duration-500 border border-white/20 hover:bg-white/20 hover:scale-105 hover:shadow-3xl animate-fadeInUp" style="animation-delay: 0.5s;">
+                    <div class="text-white mb-6 transform transition-transform duration-300 hover:scale-110">
+                        <i class="fas fa-heartbeat text-5xl drop-shadow-lg"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-4">Santé</h3>
-                    <ul class="text-gray-600 space-y-2">
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
-                            <span>Centre de santé moderne</span>
+                    <h3 class="text-2xl font-bold text-white mb-6 drop-shadow-md">Santé</h3>
+                    <ul class="text-white/90 space-y-3">
+                        <li class="flex items-start transform transition-all duration-300 hover:translate-x-2">
+                            <i class="fas fa-check text-green-300 mt-1 mr-3 text-lg"></i>
+                            <span class="drop-shadow-sm">Centre de santé moderne</span>
                         </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
-                            <span>Campagnes de sensibilisation</span>
+                        <li class="flex items-start transform transition-all duration-300 hover:translate-x-2">
+                            <i class="fas fa-check text-green-300 mt-1 mr-3 text-lg"></i>
+                            <span class="drop-shadow-sm">Campagnes de sensibilisation</span>
                         </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
-                            <span>Accès aux soins pour tous</span>
+                        <li class="flex items-start transform transition-all duration-300 hover:translate-x-2">
+                            <i class="fas fa-check text-green-300 mt-1 mr-3 text-lg"></i>
+                            <span class="drop-shadow-sm">Accès aux soins pour tous</span>
                         </li>
                     </ul>
                 </div>
-                <div class="program-card bg-gray-50 p-8 rounded-lg shadow-md transition-all duration-300 border-l-4 border-blue-400">
-                    <div class="text-green-600 mb-4">
-                        <i class="fas fa-users text-4xl"></i>
+                <div class="program-card bg-white/10 backdrop-blur-lg p-8 rounded-2xl shadow-2xl transition-all duration-500 border border-white/20 hover:bg-white/20 hover:scale-105 hover:shadow-3xl animate-fadeInUp" style="animation-delay: 0.6s;">
+                    <div class="text-white mb-6 transform transition-transform duration-300 hover:scale-110">
+                        <i class="fas fa-users text-5xl drop-shadow-lg"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-4">Jeunesse</h3>
-                    <ul class="text-gray-600 space-y-2">
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
-                            <span>Création d'espaces culturels</span>
+                    <h3 class="text-2xl font-bold text-white mb-6 drop-shadow-md">Jeunesse</h3>
+                    <ul class="text-white/90 space-y-3">
+                        <li class="flex items-start transform transition-all duration-300 hover:translate-x-2">
+                            <i class="fas fa-check text-green-300 mt-1 mr-3 text-lg"></i>
+                            <span class="drop-shadow-sm">Création d'espaces culturels</span>
                         </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
-                            <span>Stade de quartier rénové</span>
+                        <li class="flex items-start transform transition-all duration-300 hover:translate-x-2">
+                            <i class="fas fa-check text-green-300 mt-1 mr-3 text-lg"></i>
+                            <span class="drop-shadow-sm">Stade de quartier rénové</span>
                         </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
-                            <span>Programmes d'insertion professionnelle</span>
+                        <li class="flex items-start transform transition-all duration-300 hover:translate-x-2">
+                            <i class="fas fa-check text-green-300 mt-1 mr-3 text-lg"></i>
+                            <span class="drop-shadow-sm">Programmes d'insertion professionnelle</span>
                         </li>
                     </ul>
                 </div>
@@ -256,17 +324,17 @@
                 <p class="text-gray-600 mt-6 max-w-2xl mx-auto">Des colistiers soudés et compétents au service des habitants du 2<sup>e</sup> Arrondissement.</p>
                 </div>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                <div class="card-institutional p-6 rounded-lg text-center">
                     <img src="img/colistiers/2- EFOUA OBAME Désiré.jpeg" alt="EFOUA OBAME DÉSIRÉ" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
                     <h3 class="text-xl font-bold text-gray-800 mb-2" style="text-transform: uppercase;">EFOUA OBAME DÉSIRÉ</h3>
                     <p class="text-gray-600">Société civile</p>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                <div class="card-institutional p-6 rounded-lg text-center">
                     <img src="img/colistiers/3- MENGA Fabrice  - Agent Commercial.jpeg" alt="MENGA FABRICE" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
                     <h3 class="text-xl font-bold text-gray-800 mb-2" style="text-transform: uppercase;">MENGA FABRICE</h3>
                     <p class="text-gray-600">Agent Commercial</p>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                <div class="card-institutional p-6 rounded-lg text-center">
                     <img src="img/colistiers/4- NKOUMOU Fina - entrepreneur.jpeg" alt="NKOUMOU FINA" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
                     <h3 class="text-xl font-bold text-gray-800 mb-2" style="text-transform: uppercase;">NKOUMOU FINA</h3>
                     <p class="text-gray-600">entrepreneur</p>
@@ -279,7 +347,7 @@
     </section>
 
     <!-- Call to Action -->
-    <section class="py-20 text-white" style="background: linear-gradient(45deg, #3a7d44, #003893);">
+    <section class="py-20 text-white" style="background: linear-gradient(45deg, #003366, #005599);">
         <div class="container mx-auto px-6 text-center">
             <h2 class="text-3xl font-bold mb-6">Ensemble, construisons l'avenir du 2<sup>e</sup> Arrondissement</h2>
             <p class="text-xl mb-8 max-w-2xl mx-auto">Votre voix compte ! Soutenez notre liste aux élections locales de 2025.</p>
@@ -300,14 +368,14 @@
             </div>
             <div class="flex flex-col md:flex-row">
                 <div class="w-full mb-10 md:mb-0">
-                    <div class="bg-gray-50 p-8 rounded-lg shadow-md">
+                    <div class="card-institutional p-8">
                         <h3 class="text-xl font-bold text-gray-800 mb-6">Nos coordonnées</h3>
                         <div class="space-y-4">
                             <div class="flex items-start">
                                 <i class="fas fa-map-marker-alt text-green-600 mt-1 mr-4"></i>
                                 <div>
                                     <h4 class="font-semibold text-gray-800">Siège de campagne</h4>
-                                    <p class="text-gray-600">Hôtel excellence ancien sobraga à côté de l’union nation.</p>
+                                    <p class="text-gray-600">Hôtel excellence ancien sobraga à côté de l’Union Nationale.</p>
                                 </div>
                             </div>
                             <div class="flex items-start">
@@ -336,8 +404,6 @@
                             <h4 class="font-semibold text-gray-800 mb-4">Suivez-nous</h4>
                             <div class="flex space-x-4">
                                 <a href="#" class="text-blue-500 hover:text-blue-700"><i class="fab fa-facebook-f text-xl"></i></a>
-                                <a href="#" class="text-blue-400 hover:text-blue-600"><i class="fab fa-twitter text-xl"></i></a>
-                                <a href="#" class="text-pink-600 hover:text-pink-800"><i class="fab fa-instagram text-xl"></i></a>
                                 <a href="#" class="text-red-600 hover:text-red-800"><i class="fab fa-youtube text-xl"></i></a>
                             </div>
                         </div>
@@ -353,28 +419,28 @@
     <script>
         // Colistiers data
         const colistiers = [
-            { img: "img/colistiers/2- EFOUA OBAME Désiré.jpeg", alt: "EFOUA OBAME DÉSIRÉ", name: "EFOUA OBAME DÉSIRÉ", desc: "Société civile" },
-            { img: "img/colistiers/3- MENGA Fabrice  - Agent Commercial.jpeg", alt: "MENGA FABRICE", name: "MENGA FABRICE", desc: "Agent Commercial" },
+            { img: "img/colistiers/EFOUA OBAME DESIRE.png", alt: "EFOUA OBAME DÉSIRÉ", name: "EFOUA OBAME DÉSIRÉ", desc: "Société civile" },
+            { img: "img/colistiers/MENGA FABRICE.png", alt: "MENGA FABRICE", name: "MENGA FABRICE", desc: "Agent Commercial" },
             { img: "img/colistiers/4- NKOUMOU Fina - entrepreneur.jpeg", alt: "NKOUMOU FINA", name: "NKOUMOU FINA", desc: "entrepreneur" },
-            { img: "img/colistiers/5- EDZO-E. NGUEMA ABRAHAM-Arold - Communicant.jpeg", alt: "EDZO-E. NGUEMA ABRAHAM-AROLD", name: "EDZO-E. NGUEMA ABRAHAM-AROLD", desc: "Communicant" },
-            { img: "img/colistiers/6- MINKO MI NZOGHE Romaric.jpeg", alt: "MINKO MI NZOGHE ROMARIC", name: "MINKO MI NZOGHE ROMARIC", desc: "Société civile" },
-            { img: "img/colistiers/7- NAKOUNDA Siméon - PASTEUR.jpeg", alt: "NAKOUNDA SIMÉON", name: "NAKOUNDA SIMÉON", desc: "PASTEUR" },
+            { img: "img/colistiers/EDZO-E. NGUEMA ABRAHAM-AROLD.png", alt: "EDZO-E. NGUEMA ABRAHAM-AROLD", name: "EDZO-E. NGUEMA ABRAHAM-AROLD", desc: "Communicant" },
+            { img: "img/colistiers/MINKO MI NZOGHE ROMARIC.png", alt: "MINKO MI NZOGHE ROMARIC", name: "MINKO MI NZOGHE ROMARIC", desc: "Société civile" },
+            { img: "img/colistiers/NAKOUNDA SIMÉON.png", alt: "NAKOUNDA SIMÉON", name: "NAKOUNDA SIMÉON", desc: "PASTEUR" },
             { img: "img/colistiers/8- NZOGHE BEKALE Armand - Agent en environnement.jpeg", alt: "NZOGHE BEKALE ARMAND", name: "NZOGHE BEKALE ARMAND", desc: "Agent en environnement" },
             { img: "img/colistiers/9- ZOGHO OBAME Constand Jasmin - HSE.jpeg", alt: "ZOGHO OBAME CONSTAND JASMIN", name: "ZOGHO OBAME CONSTAND JASMIN", desc: "HSE" },
             { img: "img/colistiers/10- NZIGOU Hans Patrick - Entrepreneur.jpeg", alt: "NZIGOU HANS PATRICK", name: "NZIGOU HANS PATRICK", desc: "Entrepreneur" },
-            { img: "img/colistiers/11- NTOUTOUME NZE Armand - PROFESSEUR.jpeg", alt: "NTOUTOUME NZE ARMAND", name: "NTOUTOUME NZE ARMAND", desc: "PROFESSEUR" },
-            { img: "img/colistiers/12- BOUTOTO BOUTOTO Sleidje Laddy - Comptable.jpeg", alt: "BOUTOTO BOUTOTO SLEIDJE LADDY", name: "BOUTOTO BOUTOTO SLEIDJE LADDY", desc: "Comptable" },
+            { img: "img/colistiers/NTOUTOUME NZE ARMAND.png", alt: "NTOUTOUME NZE ARMAND", name: "NTOUTOUME NZE ARMAND", desc: "PROFESSEUR" },
+            { img: "img/colistiers/BOUTOTO BOUTOTO SLEIDJE LADDY.png", alt: "BOUTOTO BOUTOTO SLEIDJE LADDY", name: "BOUTOTO BOUTOTO SLEIDJE LADDY", desc: "Comptable" },
             { img: "img/colistiers/13- MENGUE M ONDONG Périne - Assurance banque.jpeg", alt: "MENGUE M ONDONG PÉRINE", name: "MENGUE M ONDONG PÉRINE", desc: "Assurance banque" },
             { img: "img/colistiers/14- NTSAME DUI Marie Marina - Entrepreneur.jpeg", alt: "NTSAME DUI MARIE MARINA", name: "NTSAME DUI MARIE MARINA", desc: "Entrepreneur" },
-            { img: "img/colistiers/15- NDONG NZUE Albert - Entrepreneur.jpeg", alt: "NDONG NZUE ALBERT", name: "NDONG NZUE ALBERT", desc: "Entrepreneur" },
+            { img: "img/colistiers/NDONG NZUE ALBERT.png", alt: "NDONG NZUE ALBERT", name: "NDONG NZUE ALBERT", desc: "Entrepreneur" },
             { img: "img/colistiers/16- TCHIPA MOUISSI Anaïs.jpeg", alt: "TCHIPA MOUISSI ANAÏS", name: "TCHIPA MOUISSI ANAÏS", desc: "Société civile" },
             { img: "img/colistiers/17- NZE NDONG Toussaint - Electricien.jpeg", alt: "NZE NDONG TOUSSAINT", name: "NZE NDONG TOUSSAINT", desc: "Electricien" },
-            { img: "img/colistiers/18- ATSAME ONDONG Grâce.jpeg", alt: "ATSAME ONDONG GRÂCE", name: "ATSAME ONDONG GRÂCE", desc: "Société civile" },
-            { img: "img/colistiers/19- EDZANG NDONG Romaric.jpeg", alt: "EDZANG NDONG ROMARIC", name: "EDZANG NDONG ROMARIC", desc: "Société civile" },
+            { img: "img/colistiers/ATSAME ONDONG GRÂCE.png", alt: "ATSAME ONDONG GRÂCE", name: "ATSAME ONDONG GRÂCE", desc: "Société civile" },
+            { img: "img/colistiers/EDZANG NDONG ROMARIC.png", alt: "EDZANG NDONG ROMARIC", name: "EDZANG NDONG ROMARIC", desc: "Société civile" },
             { img: "img/colistiers/20- BANG METOGHE Raissa.jpeg", alt: "BANG METOGHE RAISSA", name: "BANG METOGHE RAISSA", desc: "Société civile" },
-            { img: "img/colistiers/21- EBANE EYAMANE Gatien.jpeg", alt: "EBANE EYAMANE GATIEN", name: "EBANE EYAMANE GATIEN", desc: "Société civile" },
-            { img: "img/colistiers/22- IGALI MOUNGOYE Dell Derries - Etudiante.jpeg", alt: "IGALI MOUNGOYE DELL DERRIES", name: "IGALI MOUNGOYE DELL DERRIES", desc: "Etudiante" },
-            { img: "img/colistiers/23- ATOME MEYO Kevin.jpeg", alt: "ATOME MEYO KEVIN", name: "ATOME MEYO KEVIN", desc: "Société civile" },
+            { img: "img/colistiers/EBANE EYAMANE GATIEN.png", alt: "EBANE EYAMANE GATIEN", name: "EBANE EYAMANE GATIEN", desc: "Société civile" },
+            { img: "img/colistiers/IGALI MOUNGOYE DELL DERRIES.png", alt: "IGALI MOUNGOYE DELL DERRIES", name: "IGALI MOUNGOYE DELL DERRIES", desc: "Etudiante" },
+            { img: "img/colistiers/ATOME MEYO KEVIN.png", alt: "ATOME MEYO KEVIN", name: "ATOME MEYO KEVIN", desc: "Société civile" },
             { img: "img/colistiers/24- ONTSOUKA Dany Erwing.jpeg", alt: "ONTSOUKA DANY ERWING", name: "ONTSOUKA DANY ERWING", desc: "Société civile" }
         ];
 
@@ -387,7 +453,7 @@
         // Function to generate HTML for a colistier
         function generateColistierHTML(colistier) {
             return `
-                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                <div class="card-institutional p-6 rounded-lg text-center">
                     <img src="${colistier.img}" alt="${colistier.alt}" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
                     <h3 class="text-xl font-bold text-gray-800 mb-2" style="text-transform: uppercase;">${colistier.name}</h3>
                     <p class="text-gray-600">${colistier.desc}</p>
@@ -432,15 +498,27 @@
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
+                    entry.target.style.animationPlayState = 'running';
                     entry.target.classList.add('animate-float');
                 } else {
-                    entry.target.classList.remove('animate-float');
+                    entry.target.style.animationPlayState = 'paused';
                 }
             });
         }, { threshold: 0.1 });
 
         document.querySelectorAll('.program-card').forEach(card => {
+            card.style.animationPlayState = 'paused'; // Start paused
             observer.observe(card);
+        });
+
+        // Add glow effect on hover
+        document.querySelectorAll('.program-card').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.animation = 'glow 2s ease-in-out infinite';
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.animation = '';
+            });
         });
     </script>
     

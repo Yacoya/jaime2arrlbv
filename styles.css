@@ -1,59 +1,179 @@
-/* Custom Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Alternate+Gothic+ATF:wght@400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Config+Condensed:wght@400;500&display=swap');
+/* Institutional Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arial:wght@400;700&display=swap');
 
-/* Titles */
+/* Titles - Sora for modern institutional look */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Alternate Gothic ATF", Sans-serif;
-  font-size: 30px;
-  line-height: 0.9em;
-  letter-spacing: -0.7px;
+  font-family: 'Sora', sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+  color: #003366;
+}
+
+/* White text for dark backgrounds */
+.hero h1, .hero h2, .hero h3, .hero h4, .hero h5, .hero h6,
+.hero p, .hero span, .hero div,
+section[style*="background"] h1, section[style*="background"] h2, section[style*="background"] h3,
+section[style*="background"] h4, section[style*="background"] h5, section[style*="background"] h6,
+section[style*="background"] p, section[style*="background"] span, section[style*="background"] div,
+.bg-institutional h1, .bg-institutional h2, .bg-institutional h3,
+.bg-institutional h4, .bg-institutional h5, .bg-institutional h6,
+.bg-institutional p, .bg-institutional span, .bg-institutional div {
+  color: #ffffff !important;
 }
 
 /* Adjust sizes for different headings */
 h1 {
-  font-size: 36px;
+  font-size: 48px;
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 36px;
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 28px;
 }
 
 h4 {
-  font-size: 20px;
+  font-size: 24px;
 }
 
 h5 {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 h6 {
-  font-size: 16px;
+  font-size: 18px;
 }
 
-/* Texts */
+/* Body text - Clean sans-serif */
 body, p {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 17px;
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
   font-weight: 400;
-  text-transform: none;
-  line-height: 32px;
+  line-height: 1.6;
+  color: #333333;
 }
 
 /* Navigation */
 nav a {
-  font-family: "Config Condensed", Sans-serif;
-  font-size: 20px;
+  font-family: 'Arial', sans-serif;
+  font-size: 18px;
   font-weight: 500;
-  text-transform: none;
-  font-style: normal;
   text-decoration: none;
-  line-height: 1em;
-  letter-spacing: -0.2px;
-  word-spacing: 0em;
+  color: #003366;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #005599;
+}
+
+/* Institutional color variables */
+:root {
+  --primary-color: #003366;
+  --secondary-color: #f5f5f5;
+  --accent-color: #005599;
+  --text-color: #333333;
+  --light-bg: #ffffff;
+  --border-color: #e0e0e0;
+}
+
+/* General styles */
+.bg-institutional {
+  background-color: var(--primary-color);
+}
+
+.text-institutional {
+  color: var(--primary-color);
+}
+
+.btn-institutional {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-family: 'Arial', sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-institutional:hover {
+  background-color: var(--accent-color);
+}
+
+.card-institutional {
+  background-color: var(--light-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.card-institutional:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* Responsive enhancements */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  .hero {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+
+  .program-card {
+    margin-bottom: 20px;
+  }
+
+  .card-institutional {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .btn-institutional {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .hero {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+}
+
+/* Print styles for institutional documents */
+@media print {
+  body {
+    font-family: 'Times New Roman', serif;
+    color: #000;
+  }
+
+  .hero, .btn-primary, .program-card {
+    display: none;
+  }
+
+  h1, h2, h3 {
+    color: #000;
+    page-break-after: avoid;
+  }
 }

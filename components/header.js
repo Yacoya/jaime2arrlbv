@@ -12,11 +12,11 @@ function createHeader() {
                         </a>
                     </div>
                     <div class="hidden md:flex items-center space-x-8" id="desktop-menu">
-                        <a href="${isIndexPage ? '#accueil' : 'index.html#accueil'}" class="text-gray-800 hover:text-green-600">Accueil</a>
-                        <a href="${isIndexPage ? '#candidat' : 'index.html#candidat'}" class="text-gray-800 hover:text-green-600">Tête de liste</a>
-                        <a href="${isIndexPage ? '#programme' : 'index.html#programme'}" class="text-gray-800 hover:text-green-600">Programme</a>
-                        <a href="colistiers.html" class="text-gray-800 hover:text-green-600">Colistiers</a>
-                        <a href="${isIndexPage ? '#contact' : 'index.html#contact'}" class="text-gray-800 hover:text-green-600">Contact</a>
+                        <a href="${isIndexPage ? '#accueil' : 'index.html#accueil'}" class="text-gray-800 hover:text-institutional">Accueil</a>
+                        <a href="${isIndexPage ? '#candidat' : 'index.html#candidat'}" class="text-gray-800 hover:text-institutional">Tête de liste</a>
+                        <a href="${isIndexPage ? '#programme' : 'index.html#programme'}" class="text-gray-800 hover:text-institutional">Programme</a>
+                        <a href="colistiers.html" class="text-gray-800 hover:text-institutional">Colistiers</a>
+                        <a href="${isIndexPage ? '#contact' : 'index.html#contact'}" class="text-gray-800 hover:text-institutional">Contact</a>
                     </div>
                     <button class="md:hidden focus:outline-none" id="mobile-menu-btn">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -27,11 +27,11 @@ function createHeader() {
                 <!-- Mobile menu -->
                 <div class="md:hidden hidden" id="mobile-menu">
                     <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                        <a href="${isIndexPage ? '#accueil' : 'index.html#accueil'}" class="text-gray-800 hover:text-green-600 block px-3 py-2 rounded-md text-base font-medium">Accueil</a>
-                        <a href="${isIndexPage ? '#candidat' : 'index.html#candidat'}" class="text-gray-800 hover:text-green-600 block px-3 py-2 rounded-md text-base font-medium">Tête de liste</a>
-                        <a href="${isIndexPage ? '#programme' : 'index.html#programme'}" class="text-gray-800 hover:text-green-600 block px-3 py-2 rounded-md text-base font-medium">Programme</a>
-                        <a href="colistiers.html" class="text-gray-800 hover:text-green-600 block px-3 py-2 rounded-md text-base font-medium">Colistiers</a>
-                        <a href="${isIndexPage ? '#contact' : 'index.html#contact'}" class="text-gray-800 hover:text-green-600 block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+                        <a href="${isIndexPage ? '#accueil' : 'index.html#accueil'}" class="text-gray-800 hover:text-institutional block px-3 py-2 rounded-md text-base font-medium">Accueil</a>
+                        <a href="${isIndexPage ? '#candidat' : 'index.html#candidat'}" class="text-gray-800 hover:text-institutional block px-3 py-2 rounded-md text-base font-medium">Tête de liste</a>
+                        <a href="${isIndexPage ? '#programme' : 'index.html#programme'}" class="text-gray-800 hover:text-institutional block px-3 py-2 rounded-md text-base font-medium">Programme</a>
+                        <a href="colistiers.html" class="text-gray-800 hover:text-institutional block px-3 py-2 rounded-md text-base font-medium">Colistiers</a>
+                        <a href="${isIndexPage ? '#contact' : 'index.html#contact'}" class="text-gray-800 hover:text-institutional block px-3 py-2 rounded-md text-base font-medium">Contact</a>
                     </div>
                 </div>
             </div>
